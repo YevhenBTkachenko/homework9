@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Components</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <ul>
+          <li><a href="#">mylib</a></li>
+          <li><a href="#">elements</a></li>
+          <li><a href="#">components</a></li>
+          <li><a href="#">layouts</a></li>
+          <li><a href="#">drafts</a></li>
+          <li><a href="#">documentation</a></li>
+        </ul>
+      </header>
+      <div class="main">
+        <aside class="sidebar">
+          <ul>
+            <li><a href="#">chevron menu</a></li>
+            <li><a href="#">dropdown menu</a></li>
+            <li><a href="#">modal box</a></li>
+            <li><a href="#">allerts</a></li>
+          </ul>
+        </aside>
+        <div class="content">
+          <h2 class="h2-head">Chevron menu</h2>
+          <div class="box1">
+            <div class="i-round">i</div>
+            <p class="text-white">
+              Possible to use on gradient background <br />
+              Easy to use opacity for items background <br />
+              Cross-browser
+            </p>
+          </div>
+          <nav class="nav gradient">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">faq</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="hat">html</div>
+          <div class="cover">
+            <div class="code-area">
+              <pre><code class="code">
+&ltul class=”list”&gt
+    &ltli&gt&lta href=”#”&gtAbout&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href=”#”&gtCareers&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href=”#”&gtFAQ&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href=”#”&gtContact&lt/a&gt&lt/li&gt
+&lt/ul&gt
+              </code></pre>
+            </div>
+          </div>
+          <div class="hat">css</div>
+          <div class="cover">
+            <div class="code-area">
+              <pre><code class="code">
+div.menu-body-gradient  {
+ padding: 2px 0;
+ background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+ height: 96px;
+}
+ul.list-gr {
+ margin:0;
+ padding: 0 60px;
+ text-align: right;
+}
+ul.list-gr li {
+ display: inline-block;
+ position: relative;
+ padding: 30px 25px 29px 25px;
+ margin: 0 20px 0 25px;
+ background-color: #ffffff;
+ font-family: Helvetica;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 32px;
+ line-height: 37px;
+}
+ul.list-gr li:hover {
+ opacity: 0.7;
+}
+ul.list-gr li::after {
+ position: absolute;
+ top:0;
+ left: 100%;
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 48px 0 48px 25px;
+ border-color: transparent transparent transparent #ffffff;
+}
+ul.list-gr li > a {
+ vertical-align: top;
+ text-decoration: none;
+ color: #000000;
+}
+ul.list-gr li > a::after {
+ position: absolute;
+ left: -25px;
+ top: 0px;
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 0 25px 48px 0;
+ border-color: transparent #ffffff transparent transparent;
+}
+ul.list-gr li > a::before {
+ position: absolute;
+ left: -25px;
+ top: 48px;
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 0 0 48px 25px;
+ border-color: transparent transparent #ffffff transparent;
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+                  </div>
+              </main>
+              <footer class="footer">
+                <ul>
+                  <li>
+                    <a href="#">Lorem, ipsum.</a><a href="#">Lorem, ipsum.</a
+                    ><a href="#">Lorem, ipsum.</a><a href="#">Lorem, ipsum.</a>
+                  </li>
+                </ul>
+              </footer>
+    </div>
+  </body>
+</html>
